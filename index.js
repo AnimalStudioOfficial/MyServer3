@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 8080;
 const express = require("express");
 const Datastore = require("nedb");
 
@@ -25,5 +26,8 @@ app.post("/api", (request, response) => {
   database.insert(data);
   response.json(data);
 });
-const server = http.createServer(process.env.PORT || 3000);
+app.listen(PORT, () => {
+    console.log("Proxy is listening on port: ", PORT)
+})
+//const server = http.createServer(process.env.PORT || 3000);
 //app.listen(3000, () => console.log("listening at 3000"));
