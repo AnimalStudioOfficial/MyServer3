@@ -19,6 +19,12 @@ app.get("/api", (request, response) => {
   });
 });
 
+app.post("/wipe", (request, response) => {
+  database.remove({}, { multi: true }, function (err, numRemoved) {
+});
+  response.json(JSON.stringify(PORT));
+});
+
 app.post("/api", (request, response) => {
   const data = request.body;
   const timestamp = Date.now();
@@ -26,6 +32,7 @@ app.post("/api", (request, response) => {
   database.insert(data);
   response.json(data);
 });
+
 app.listen(PORT, () => {
     console.log("Proxy is listening on port: ", PORT)
 })
