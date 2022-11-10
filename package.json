@@ -2,8 +2,12 @@
   "name": "module2_exercise_05",
   "version": "1.0.0",
   "description": "This is the data selfie app by Joey Lee.",
+   "engines": {
+   "node": "12.11.1"
+   }
   "main": "index.js",
   "scripts": {
+     "start": "node index.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
