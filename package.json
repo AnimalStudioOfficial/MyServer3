@@ -1,24 +1,25 @@
 {
   "name": "module2_exercise_05",
   "version": "1.0.0",
-  "description": "This is the data selfie app by Joey Lee.",
+  "description": "",
    "engines": {
    "node": "12.11.1"
    },
-  "main": "index.js",
+  "main": "functions/api.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "netlify-lambda serve",
+    "build": "netlify-lambda build",
+    "postinstall": "netlify-lambda install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "example",
     "data",
-    "selfie"
   ],
-  "author": "Daniel Shiffman",
+  "author": "",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
+    "netlify-lambda": "^2.0.15",
     "nedb": "^1.8.0"
   }
 }
