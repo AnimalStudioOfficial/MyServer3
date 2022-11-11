@@ -33,7 +33,7 @@ app.post("/api", (request, response) => {
   response.json(data);
 });
 
-app.listen(PORT, () => {
+const listener = app.listen(PORT, () => {
     console.log("Proxy is listening on port: ", PORT)
 })
 //const server = http.createServer(process.env.PORT || 3000);
