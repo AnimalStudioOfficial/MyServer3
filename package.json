@@ -4,9 +4,9 @@
   "description": "",
   "main": "functions/api.js",
   "scripts": {
-    "start": "netlify-lambda serve .",
-    "build": "netlify-lambda build .",
+    "build": "netlify-lambda build src",
     "postinstall": "netlify-lambda install",
+    "start": "netlify-lambda serve src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
