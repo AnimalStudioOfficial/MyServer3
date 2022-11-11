@@ -4,8 +4,8 @@
   "description": "",
   "main": "functions/api.js",
   "scripts": {
-    "start": "netlify-lambda serve",
-    "build": "netlify-lambda build",
+    "start": "netlify-lambda serve .",
+    "build": "netlify-lambda build .",
     "postinstall": "netlify-lambda install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
