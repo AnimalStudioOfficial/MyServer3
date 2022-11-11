@@ -2,7 +2,7 @@
   "name": "module2_exercise_05",
   "version": "1.0.0",
   "description": "",
-  "main": "functions/api.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "netlify-lambda build src",
     "postinstall": "netlify-lambda install",
