@@ -13,9 +13,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "data",
+    "data"
   ],
-  "author": "",
+  "author": "animal",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
