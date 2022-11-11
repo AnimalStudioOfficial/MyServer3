@@ -1,6 +1,7 @@
 const express = require("express");
+const serverless= require('serverless-http');
 const Datastore = require("nedb");
-const PORT = process.env.PORT || 8080;
+//const PORT = process.env.PORT || 8080;
 
 
 const app = express();
@@ -33,9 +34,9 @@ app.post("/api", (request, response) => {
   database.insert(data);
   response.json(data);
 });
-
-const listener = app.listen(PORT, () => {
-    console.log("Proxy is listening on port: ", PORT)
-})
+module.exports.handler = serverless(app);
+//const listener = app.listen(PORT, () => {
+//    console.log("Proxy is listening on port: ", PORT)
+//})
 //const server = http.createServer(process.env.PORT || 3000);
 //app.listen(3000, () => console.log("listening at 3000"));
